@@ -9,6 +9,12 @@
 <meta name="author" content="Atom Explorer">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ayushrajwrs2013.github.io/3d-atom-explorer/">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#161b22">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="3D Atom Explorer — Interactive 3D Atom Models &amp; Periodic Table">
 <meta property="og:description" content="Select any of the 118 chemical elements and view its 3D atom model: electron shells, electronic configuration, valency, protons, neutrons and electrons.">
@@ -229,6 +235,7 @@
 
 <footer>
   <p>3D Atom Explorer — interactive Bohr atom models &amp; electronic configuration for all 118 elements, built with Three.js.</p>
+  <p style="margin-top:6px;"><a href="privacy-policy.html" style="color:var(--accent);">Privacy Policy</a></p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -644,6 +651,13 @@ document.getElementById('reset-view').addEventListener('click', () => {
    ============================================================ */
 initThree();
 selectElement(1);
+
+// Register the service worker for installability + offline support (PWA).
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW registration failed:', err));
+  });
+}
 </script>
 </body>
 </html>
