@@ -1,12 +1,14 @@
-const CACHE_NAME = 'atom-explorer-v1';
+const CACHE_NAME = 'atom-explorer-v2';
+const BASE = new URL(self.registration.scope).href;
 const ASSETS = [
-  '/3d-atom-explorer/',
-  '/3d-atom-explorer/index.html',
-  '/3d-atom-explorer/manifest.json',
-  '/3d-atom-explorer/icon-192.png',
-  '/3d-atom-explorer/icon-512.png',
-  '/3d-atom-explorer/maskable-512.png',
-  '/3d-atom-explorer/privacy-policy.html',
+  BASE,
+  BASE + 'index.html',
+  BASE + 'manifest.json',
+  BASE + 'icon-192.png',
+  BASE + 'icon-512.png',
+  BASE + 'maskable-512.png',
+  BASE + 'privacy-policy.html',
+  BASE + 'downloads.html',
   'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
 ];
 

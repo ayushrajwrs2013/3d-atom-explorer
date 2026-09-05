@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.atomexplorer.app",
+    "sha256_cert_fingerprints": ["1F:77:E3:0D:98:22:8F:E2:12:34:A6:3D:FC:0D:C3:DE:5C:F6:A8:01:2F:5B:8C:86:1A:F7:37:4D:50:F8:51:87"]
+  }
+}]

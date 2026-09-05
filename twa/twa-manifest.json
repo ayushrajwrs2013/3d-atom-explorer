@@ -1,0 +1,38 @@
+{
+  "packageId": "com.atomexplorer.app",
+  "host": "YOUR_DOMAIN_GOES_HERE",
+  "name": "3D Atom Explorer",
+  "launcherName": "Atom Explorer",
+  "display": "standalone",
+  "themeColor": "#161b22",
+  "themeColorDark": "#0d1117",
+  "navigationColor": "#161b22",
+  "navigationColorDark": "#0d1117",
+  "navigationDividerColor": "#30363d",
+  "navigationDividerColorDark": "#30363d",
+  "backgroundColor": "#0d1117",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://YOUR_DOMAIN_GOES_HERE/icon-512.png",
+  "maskableIconUrl": "https://YOUR_DOMAIN_GOES_HERE/maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "/home/ayush/Desktop/atom-SIGNING-KEY/signing.keystore",
+    "alias": "atomexplorer"
+  },
+  "appVersionName": "1.1.0",
+  "appVersionCode": 2,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://YOUR_DOMAIN_GOES_HERE/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettings": false,
+  "enableUrlBarHiding": true,
+  "enableNotificationsDelegation": false,
+  "allowExternalNavigations": false,
+  "includeSourceInfo": false
+}
