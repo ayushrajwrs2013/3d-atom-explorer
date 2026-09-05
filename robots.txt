@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayushrajwrs2013.github.io/3d-atom-explorer/sitemap.xml
