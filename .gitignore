@@ -5,3 +5,5 @@ node_modules/
 # Never commit signing key files in a public repo
 *.keystore
 signing-key-info.txt
+# Local TWA rebuild script contains the keystore password — keep it out of the repo
+twa/rebuild.sh
